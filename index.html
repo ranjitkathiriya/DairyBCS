@@ -30,6 +30,13 @@
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
+
+    <style>
+        .video-popup {
+            z-index: 3;
+        }
+    </style>
+
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
@@ -96,28 +103,41 @@
 
     <!-- Header -->
     <header class="header">
-        <div class="container">
-<!--            <div class="row">-->
-<!--                <div class="col-lg-12">-->
-<!--                    <div class="text-container">-->
-<!--                        <h1>Mobile App Landing Page</h1>-->
-<!--                        <p class="p-large p-heading">Start focusing on your goals and get more things done with Sync mobile application. It's the first app to harness the power of social connections to help you stay focused and get organized</p>-->
-<!--                        <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>App Store</a>-->
-<!--                        <a class="btn-solid-lg" href="#your-link"><i class="fab fa-google-play"></i>Google Play</a>-->
-<!--                    </div> &lt;!&ndash; end of text-container &ndash;&gt;-->
-<!--                </div> &lt;!&ndash; end of col &ndash;&gt;-->
-<!--            </div> &lt;!&ndash; end of row &ndash;&gt;-->
+        <div class="container container1">
             <div class="row">
                 <div class="col-lg-12">
-
                     <div class="image-container">
-<!--                        <a class="fas fa-play" href="https://www.youtube.com/watch?v=q9XI0Lo-SWE"></a>-->
-
                         <img class="img-fluid" src="images/header-iphone.png" alt="alternative">
+                        <div class="middle">
+                            <div class="text-container">
+                                <button type="button" data-toggle="modal" class="btn-solid-lg video-btn" data-target="#myModal" src="https://www.youtube.com/watch?v=Cad_XxMQI18"><i class="fab fa-google-play" aria-hidden="true"></i>Play</button>
+                            </div>
+                        </div>
                     </div> <!-- end of text-container -->
+
+
+
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
+
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                            <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=Cad_XxMQI18" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                          </div>
+                        </div>
+                      </div>
+        </div>
+
         <div class="deco-white-circle-1">
             <img src="images/decorative-white-circle.svg" alt="alternative">
         </div> <!-- end of deco-white-circle-1 -->
@@ -897,5 +917,6 @@
     <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="js/video.js"></script> <!-- Custom scripts -->
 </body>
 </html>

@@ -104,6 +104,8 @@ h6 {
 	line-height: 1.5rem;
 }
 
+
+
 .li-space-lg li {
 	margin-bottom: 0.625rem;
 }
@@ -251,6 +253,38 @@ a.red {
 	cursor: text;
 	transition: all 0.2s ease;
 }
+/* Custom Changes-1 for center button for video play.*/
+.middle {
+  transition: .5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+  }
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+
+/* Till here */
 
 /* IE10+ hack to solve lower label text position compared to the rest of the browsers */
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
