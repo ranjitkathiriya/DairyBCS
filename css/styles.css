@@ -46,6 +46,10 @@ html {
 	height: 100%;
 }
 
+body{
+overflow-x:hidden;
+}
+
 body, p {
 	color: #777; 
 	font: 400 1rem/1.75rem "Open Sans", sans-serif;
